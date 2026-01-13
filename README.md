@@ -13,26 +13,28 @@
 ### 3.1 安装 SourceExpander
 
 在 VS2026 中打开管理NuGet包安装SourceExpander 这个包
+<img width="1012" height="686" alt="image" src="https://github.com/user-attachments/assets/c036915d-3807-4c3b-a8c2-0df66f37e291" />
 
-![image-20260113214704427](.\pics\image-20260113214704427.png)
 
 ### 3.2 安装 ac-library-csharp
 
 同样的，找到 ac-library-csharp 包并安装
 
-![image-20260113214800761](.\pics\image-20260113214800761.png)
+<img width="1479" height="717" alt="image" src="https://github.com/user-attachments/assets/5ed97041-88ec-4971-965d-8dde148283bc" />
+
 
 ### 3.3 在本地使用atc模板库
 
-![image-20260113214900000](.\pics\image-20260113214900000.png)
+<img width="1439" height="650" alt="image" src="https://github.com/user-attachments/assets/ead9243b-b59d-4aca-a76b-666317a1ff65" />
+
 
 装完上面两个包，就可以正常使用 atc的板子了。
 
 在主程序中加入 `            SourceExpander.Expander.Expand();`
 
 这样运行后就会生成一个 文件`Combined.csx`， SourceExpander 会在该文件尾部帮你展开你所引用的命名空间
+<img width="1334" height="250" alt="image" src="https://github.com/user-attachments/assets/ce6e3cef-817d-4566-85c4-96fc63e699b0" />
 
-![image-20260113215117969](.\pics\image-20260113215117969.png)
 
 ### 3.4 如何展开自定义库
 
@@ -42,21 +44,25 @@
 
 比如我的IO板子：
 
-![image-20260113215345854](.\pics\image-20260113215345854.png)
+<img width="1909" height="594" alt="image" src="https://github.com/user-attachments/assets/b89f81eb-9152-4119-b033-3fdf58e6e3ab" />
+
 
 #### 3.4.2 安装 SourceExpander.Embedder
 
 这次安装：**SourceExpander.Embedder**（**注意，在类库项目中安装，如果同时安装SourceExpander 和 SourceExpander.Embedder无法正常运行**）
 
-![image-20260113215222465](.\pics\image-20260113215222465.png)
+<img width="1440" height="622" alt="image" src="https://github.com/user-attachments/assets/81d6af95-4d8b-4d70-a7a9-ee7b75537ff9" />
+
 
 然后在右侧解决方案处右键项目点击生成
 
-![image-20260113215538811](.\pics\image-20260113215538811.png)
+<img width="511" height="924" alt="image" src="https://github.com/user-attachments/assets/851a74f5-09c8-4ffb-9dda-2ac5d2d1730b" />
+
 
 这样目录下面会有dll文件，回到写代码的项目，右键点击添加-项目引用
 
-![image-20260113215641742](.\pics\image-20260113215641742.png)
+<img width="908" height="1015" alt="image" src="https://github.com/user-attachments/assets/c8fbeb6b-d3fb-4035-a8be-d57f0e3ac1c1" />
+
 
 点击浏览，找到dll文件，然后就可以引用类库的内容了
 
@@ -80,13 +86,15 @@ DataRow 第一个字符串内放输入，第二个字符串放输出
 
 多组用例直接写多个 DataRow 即可
 
-![image-20260113220031317](.\pics\image-20260113220031317.png)
+<img width="970" height="474" alt="image" src="https://github.com/user-attachments/assets/dd71eeaf-4750-4ecd-a8bb-545aa73e3f45" />
+
 
 **效果：**
 
-![image-20260113220448830](.\pics\image-20260113220448830.png)
+<img width="1059" height="450" alt="image" src="https://github.com/user-attachments/assets/4257d181-fbff-4380-aecb-adb552bd674a" />
 
-![image-20260113220513678](.\pics\image-20260113220513678.png)
+<img width="1061" height="452" alt="image" src="https://github.com/user-attachments/assets/d95ff7e0-2edd-4e16-96c6-cd00b5d6f23c" />
+
 
 
 
