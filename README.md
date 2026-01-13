@@ -14,17 +14,17 @@
 
 在 VS2026 中打开管理NuGet包安装SourceExpander 这个包
 
-![image-20260113214704427](C:\Users\史鑫阳\AppData\Roaming\Typora\typora-user-images\image-20260113214704427.png)
+![image-20260113214704427](.\pics\image-20260113214704427.png)
 
 ### 3.2 安装 ac-library-csharp
 
 同样的，找到 ac-library-csharp 包并安装
 
-![image-20260113214800761](C:\Users\史鑫阳\AppData\Roaming\Typora\typora-user-images\image-20260113214800761.png)
+![image-20260113214800761](.\pics\image-20260113214800761.png)
 
 ### 3.3 在本地使用atc模板库
 
-![image-20260113214900000](C:\Users\史鑫阳\AppData\Roaming\Typora\typora-user-images\image-20260113214900000.png)
+![image-20260113214900000](.\pics\image-20260113214900000.png)
 
 装完上面两个包，就可以正常使用 atc的板子了。
 
@@ -32,7 +32,7 @@
 
 这样运行后就会生成一个 文件`Combined.csx`， SourceExpander 会在该文件尾部帮你展开你所引用的命名空间
 
-![image-20260113215117969](C:\Users\史鑫阳\AppData\Roaming\Typora\typora-user-images\image-20260113215117969.png)
+![image-20260113215117969](.\pics\image-20260113215117969.png)
 
 ### 3.4 如何展开自定义库
 
@@ -42,21 +42,21 @@
 
 比如我的IO板子：
 
-![image-20260113215345854](C:\Users\史鑫阳\AppData\Roaming\Typora\typora-user-images\image-20260113215345854.png)
+![image-20260113215345854](.\pics\image-20260113215345854.png)
 
 #### 3.4.2 安装 SourceExpander.Embedder
 
 这次安装：**SourceExpander.Embedder**（**注意，在类库项目中安装，如果同时安装SourceExpander 和 SourceExpander.Embedder无法正常运行**）
 
-![image-20260113215222465](C:\Users\史鑫阳\AppData\Roaming\Typora\typora-user-images\image-20260113215222465.png)
+![image-20260113215222465](.\pics\image-20260113215222465.png)
 
 然后在右侧解决方案处右键项目点击生成
 
-![image-20260113215538811](C:\Users\史鑫阳\AppData\Roaming\Typora\typora-user-images\image-20260113215538811.png)
+![image-20260113215538811](.\pics\image-20260113215538811.png)
 
 这样目录下面会有dll文件，回到写代码的项目，右键点击添加-项目引用
 
-![image-20260113215641742](C:\Users\史鑫阳\AppData\Roaming\Typora\typora-user-images\image-20260113215641742.png)
+![image-20260113215641742](.\pics\image-20260113215641742.png)
 
 点击浏览，找到dll文件，然后就可以引用类库的内容了
 
@@ -80,13 +80,13 @@ DataRow 第一个字符串内放输入，第二个字符串放输出
 
 多组用例直接写多个 DataRow 即可
 
-![image-20260113220031317](C:\Users\史鑫阳\AppData\Roaming\Typora\typora-user-images\image-20260113220031317.png)
+![image-20260113220031317](.\pics\image-20260113220031317.png)
 
 **效果：**
 
-![image-20260113220448830](C:\Users\史鑫阳\AppData\Roaming\Typora\typora-user-images\image-20260113220448830.png)
+![image-20260113220448830](.\pics\image-20260113220448830.png)
 
-![image-20260113220513678](C:\Users\史鑫阳\AppData\Roaming\Typora\typora-user-images\image-20260113220513678.png)
+![image-20260113220513678](.\pics\image-20260113220513678.png)
 
 
 
